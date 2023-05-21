@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI For All</title>
+  <style>
+    /* CSS样式可以用于进一步自定义您的网站外观 */
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    
+    .slideshow-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    body {
+      font-family: Cooper Black, sans-serif;
+      background-color: #171717;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #171717;
+      font-size:60px;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      color: #ffffff;
+    }
+
+    h2 {
+      color: #a7a7a7;
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    
+    .subtopic {
+      font-family: Times New Roman, sans-serif;
+      font-size:30px;
+      margin-bottom: 20px;
+      margin-left: 200px;
+      margin-right: 200px;
+      line-height: 35px;
+      color: #cfcfcf;
+    }
+    .readings a p{
+      font-family: Times New Roman, sans-serif;
+      color: #cfcfcf;
+      width: 70%;
+      margin-left: 200px;
+      margin-right: 200px;
+      position: relative;
+    }
+    .readings {
+      display: flex;
+    }
+    .readings a img{
+      width: 70%;
+      float: left;
+      margin-left: 200px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI For All</h1>
+    <h2>Building a Fair and Just Future with Artificial Intelligence</h2>
+  </header>
+  
+  <div class="slideshow-container">
+    <img class="mySlides" src="1.jpg" alt="Image 1">
+    <img class="mySlides" src="2.jpg" alt="Image 2">
+  </div>
+
+  <div class="subtopic">
+    <h3>● Why</h3>
+    <p>Artificial intelligence is transforming our world, but not equally for everyone.
+      <br>
+      <br>
+      AI technology has advanced rapidly in recent years, fueled by increases in data, computing power, and algorithmic sophistication. However, AI progress has been uneven across regions and sectors. Many technology companies and research universities have advanced AI teams and resources, while others lack access to AI tools or data. Some nations have prioritized AI funding and development, but AI expertise and research remain limited in other parts of the world.
+      <br>
+      <br>
+      This unequal progress could deepen the divide between the technological haves and have-nots, and lead to global disruption. However, if we're proactive and thoughtful, we can develop AI in a way that's equitable and beneficial for people everywhere. 
+      <br>
+      <br>
+      AI's awesome power and potential mean we must ensure its development is fair, accountable, and inclusive. Though the challenges ahead are complex, the goal is simple: an AI-empowered future that uplifts and improves lives in all corners of the planet. Getting there will require cooperation and a commitment to AI equity across borders and organizations. With compassion and by sharing knowledge, we can build an AI that serves the totality of human needs and values.
+      <br>
+      <br>
+      We must start now to close the AI gap, break the cycle of imbalance, and guide this technology toward a just and optimistic future for all. The opportunity is before us to forge an AI for all. We must seize it.
+      </p>
+  </div>
+  
+  <div class="subtopic">
+    <h3>● How</h3>
+    <p>Here lists some actions that could help ensure the balanced and equitable development of AI:
+      <br><br>• Increase international cooperation on AI research and development. This could include information sharing, joint projects, and coordinated policymaking. This can help avoid an "AI arms race" and unequal distribution of capabilities.
+      <br><br>• Invest in AI safety and ethics research. We need to proactively address risks from advanced AI and ensure the responsible development of the technology. This includes technical work on AI alignment and control, as well as research on AI ethics and policy. 
+      <br><br>• Improve access to AI education and training. Expand programs to train more people with the skills to work in AI, especially those from underrepresented groups. This can help diversify the field and bring more voices into the development of the technology.
+      <br><br>• Establish guidelines and best practices for "AI for good." Develop principles and standards around how to develop AI in a trustworthy, ethical, and beneficial manner. This can help set the right incentives and practices for companies and researchers.
+      <br><br>• Consider policies and regulations on AI development. Carefully regulate the research, testing, and deployment of advanced AI systems. While regulation needs to be balanced, some oversight and guardrails could help address concerns about unequal or irresponsible AI progress.
+      <br><br>• Increase public-private partnerships (PPPs). Forge collaborations between companies, universities, and governments to help maximize the benefits of AI while mitigating the risks. PPPs could help align AI progress with societal values and benefit humanity broadly. 
+      <br><br>• Invest in programs to spread the benefits of AI. Develop initiatives to apply AI to problems like healthcare, education, and environmental sustainability that can improve lives around the globe. Help make AI's advantages accessible to all of humanity.
+      </p >
+  </div>
+  
+  <div class="subtopic">
+    <h3>● External Reading</h3>
+  </div>
+
+  <div class="readings">
+    <a href="https://www.aclu.org/news/privacy-technology/how-artificial-intelligence-can-deepen-racial-and-economic-inequities">
+      <img src="reading1.jpg" alt="Image">
+      <p>How Artificial Intelligence Can Deepen <br>Racial and Economic Inequities | ACLU</p>
+    </a>
+    <a href="https://www.technologyreview.com/2022/04/19/1049378/ai-inequality-problem/">
+      <img src="reading2.jpg" alt="Image">
+      <p>How to solve AI's inequality problem</p>
+    </a>
+  </div>
+  
+  
+  
+  
+  <script>
+    // JavaScript代码用于实现图片切换效果
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // 图片切换的时间间隔（以毫秒为单位）
+    }
+  </script>
+</body>
+</html>
